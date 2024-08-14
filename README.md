@@ -25,7 +25,7 @@ To replicate this project, you will need API keys for both the Aviation Edge and
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/Real-Time-Flight-Delay-Prediction.git
+   git clone https://github.com/elmasri-ali/Real-Time-Flight-Delay-Prediction.git
    ```
 
 2. **Create and activate the Conda environment:**:
