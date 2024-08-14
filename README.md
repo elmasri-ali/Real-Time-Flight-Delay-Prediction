@@ -7,33 +7,7 @@ This repository contains the code and data for the project "Real-Time Flight Del
 
 Flight delays are a significant challenge in the aviation industry, leading to operational inefficiencies and customer dissatisfaction. This project introduces a machine learning approach to predict flight delays using a combination of historical flight data and real-time weather data.
 
-## Repository Structure
 
-```
-Real-Time-Flight-Delay-Prediction/
-│
-├── data/
-│   ├── raw/          # Raw data files
-│   ├── processed/    # Processed data files used for modeling
-│   └── external/     # Data from external sources (if applicable)
-│
-├── notebooks/        # Jupyter notebooks for data exploration and model development
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_model_training.ipynb
-│   └── 03_real_time_prediction.ipynb
-│
-├── src/              # Source code for data processing and modeling
-│   ├── data_preprocessing.py
-│   ├── model_training.py
-│   └── real_time_prediction.py
-│
-├── models/           # Saved models and scalers
-│   ├── xgboost_model.joblib
-│   └── random_forest_model.joblib
-│
-├── README.md         # Project overview and instructions
-└── requirements.txt  # Required Python packages
-```
 
 ## Data Sources
 
@@ -41,6 +15,7 @@ The data for this project is sourced from the following APIs:
 
 - **Aviation Edge API**: Provides detailed historical and real-time data on flights, including information on departures, arrivals, delays, and other flight-related parameters. [API Documentation](https://aviation-edge.com/premium-api/).
 - **Open-Weather API**: Supplies real-time weather data, which is crucial for understanding how current weather conditions may impact flight delays. [API Documentation](https://openweathermap.org/api).
+- **Openn-Weather*: 1 Year historical Data for JFK Area from 7/1/2023.  
 
 ### API Keys
 
@@ -53,9 +28,10 @@ To replicate this project, you will need API keys for both the Aviation Edge and
    git clone https://github.com/yourusername/Real-Time-Flight-Delay-Prediction.git
    ```
 
-2. **Install the required Python packages**:
+2. **Create and activate the Conda environment:**:
    ```bash
-   pip install -r requirements.txt
+   conda env create -f environment.yml
+   conda activate your_environment_name
    ```
 
 3. **Add your API keys**:
@@ -89,4 +65,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - The data sources used in this project.
-- The contributors to the Python libraries that made this project possible.
+- The contributors to the Python libraries that made this possible.
